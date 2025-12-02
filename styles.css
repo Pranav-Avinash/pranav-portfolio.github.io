@@ -1,0 +1,102 @@
+/* Page basics */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;      /* black background */
+  color: #ffffff;                 /* default text color: white */
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+/* Make all normal text white */
+p, h1, h2, h3, h4, h5, h6, label, span, li {
+  color: #ffffff;
+}
+
+/* Turn text red on hover */
+p:hover,
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+label:hover,
+span:hover,
+li:hover,
+a:hover {
+  color: #ff3b3b;
+}
+
+/* Links default white, red on hover */
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Red text box (for your note/name input) */
+input[type="text"],
+textarea {
+  background-color: #b30000;      /* red box */
+  color: #ffffff;                 /* white text inside box */
+  border: 2px solid #ff4d4d;
+  padding: 8px 10px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Optional: slight glow when focusing the text box */
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #ff7777;
+  box-shadow: 0 0 5px #ff7777;
+}
+#pinboardArea {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  background-color: #000;
+
+
+}
+
+
+.note {
+  background-color: #b30000; /* red note or change as you like */
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: grab;
+  user-select: none;
+}
+.note {
+  background-color: #b30000;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: grab;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.note .delete-note {
+  background: #ffffff;
+  color: #b30000;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 18px;
+  text-align: center;
+  padding: 0;
+}
+
+.note .delete-note:hover {
+  background: #ffcccc;
+}
