@@ -1,20 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>About Me</title>
-<link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-<nav>
-  <a href="index.html">About Me</a>
-  <a href="pinboard.html">Pinboard</a>
-</nav>
 
-<h1>About Me</h1>
-<p>Hello! I am Pranav Avinash, welcome to my portfolio site.</p>
-<p>I love coding, web development, and music.</p>
-<p>Please leave your name on the other page so I know you've seen this page. Thank you ^_^</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pranav Avinash | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Pranav Avinash – Computer Science (Data Science) student, fast learner, and tech club hopeful." />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="logo">
+        <svg fill="#ffffff" width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+          style="margin-right: 0.5rem;">
+          <path d="M11 2H13V5H14V6H10V5H11V2ZM11 6H13V13H11V6ZM9 13H15V15H16V19H15V21H9V19H8V15H9V13Z"
+            shape-rendering="crispEdges" />
+        </svg>
+        <span>Pranav Avinash</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Leadership</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="hero container">
+      <!-- BIG WASD GAME -->
+      <div class="hero-game">
+        <div class="hero-game-header">
+          <h2>Walk around my intro</h2>
+          <p>
+            Use <span class="key">W</span> <span class="key">A</span>
+            <span class="key">S</span> <span class="key">D</span> to move.
+          </p>
+        </div>
+
+        <div class="game-wrapper">
+          <div id="gameViewport" class="game-viewport" aria-label="Mini map"></div>
+          <div id="gameInfo" class="game-info">
+            Move with WASD to discover who I am.
+          </div>
+          <div class="game-legend">
+            <span>🌿 campus • 🎓 academics • 🎵 music • 🏀 sports • ⭐ extras</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEXT UNDER THE GAME -->
+      <div class="hero-text">
+        <p class="hero-eyebrow">Hi, club recruiter 👋</p>
+        <h1 class="hero-title">I’m Pranav Avinash</h1>
+        <p class="hero-subtitle">
+          Computer Science student specialising in <strong>Data Science</strong>,
+          trying my best to level up in coding every day. Fast learner, obsessed
+          with improving, and really motivated to contribute to tech clubs.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#experience" class="btn primary">See Leadership</a>
+        </div>
+
+        <div class="hero-meta">
+          <span>🎓 CSE (Data Science)</span>
+          <span>🏫 VIT Vellore (student)</span>
+          <span>🧠 Quick & enthusiastic learner</span>
+        </div>
+
+        <div class="social-icons">
+          <!-- TODO: replace href with your real links -->
+          <a class="icon-btn" href="https://github.com/your-github-username" target="_blank" rel="noopener"
+            aria-label="GitHub">
+            🐙
+          </a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener"
+            aria-label="LinkedIn">
+            💼
+          </a>
+          <a class="icon-btn" href="https://www.instagram.com/your-instagram-id" target="_blank" rel="noopener"
+            aria-label="Instagram">
+            📸
+          </a>
+          <a class="icon-btn" href="https://x.com/your-handle" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            🐦
+          </a>
+        </div>
+
+        <p class="hero-note">
+          Built and tested on my <strong>ASUS TUF F16 (RTX5050-expensive laptop have to flex;)</strong>, usually
+          while I’m alt-tabbing from Valorant (Gold 3), Clash Royale, or some
+          new game I’m trying out.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About me</h2>
+        <p class="section-intro">
+          I’m a <strong>Computer Science (Data Science)</strong> student who
+          genuinely enjoys learning, grinding through bugs, and getting a little
+          better at building things every week.
+        </p>
+
+        <div class="about-grid">
+          <div>
+            <h3 class="section-subtitle">What I’m aiming for</h3>
+            <p>
+              I’m actively looking to join <strong>tech clubs</strong> where I
+              can learn from seniors, contribute to real projects, and get more
+              exposure to software engineering, data and ML.
+            </p>
+            <p>
+              I might not know everything yet, but I’m very comfortable with
+              <strong>not knowing</strong> and figuring things out. I ask
+              questions, I iterate, and I don’t mind doing the unglamorous work
+              if it makes the team better.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="section-subtitle">Some quick facts</h3>
+            <ul class="about-list">
+              <li><span>🏅</span> Former <strong>CCA (co-curricular) Captain</strong> of my school</li>
+              <li><span>👑</span> Crowned <strong>Mr APS RK Puram</strong></li>
+              <li><span>🎵</span> Led my school <strong>music band</strong> (electric guitar)</li>
+              <li><span>🏀</span> Experience leading my <strong>basketball team</strong></li>
+              <li><span>♟</span> I enjoy playing <strong>chess</strong></li>
+              <li><span>🎮</span> Valorant <strong>Gold 3</strong>, Clash Royale grinder, exploring new games</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- OPTIONAL PHOTO STRIP -->
+        <!-- VISUALIZE BUTTON -->
+        <div class="visualize-container">
+          <button class="visualize-btn" onclick="openVisualize()">
+            Visualize me
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Tech stack & interests</h2>
+        <p class="section-intro">
+          I’m still levelling up, but these are the areas I’m actively learning and using.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Coding</h3>
+            <p>Python, C/C++, dress, currently trying to learn react.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Data Science</h3>
+            <p>4th year mein dekha jaega... jk I did infact learn this in school but not nearly to the depth that is
+              required for future use.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Web</h3>
+            <p>HTML, CSS, Git & GitHub, responsive layouts</p>
+          </div>
+          <div class="skill-card">
+            <h3>Soft skills</h3>
+            <p>Leadership, communication, stage presence, team coordination, discipline</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP / EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Leadership & extra-curriculars</h2>
+        <p class="section-intro">
+          I’ve spent a lot of time leading teams outside code — which is why I’m very comfortable working with people,
+          handling pressure, and owning responsibility.
+        </p>
+
+        <div class="experience-grid">
+          <article class="experience-card">
+            <h3>CCA Captain – School</h3>
+            <p>
+              Led co-curricular activities for my school, coordinating events, managing teams, and making sure things
+              actually happened on time.
+            </p>
+            <ul>
+              <li>Organised and managed multiple school events</li>
+              <li>Handled logistics, team communication, and planning</li>
+              <li>Learned how to keep people motivated and aligned</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <h3>Mr APS RK Puram</h3>
+            <p>
+              Selected as <strong>Mr APS RK Puram</strong>, representing not just academics but confidence, presence,
+              and all-round involvement.
+            </p>
+            <ul>
+              <li>Participated in multiple cultural and public-facing events</li>
+              <li>Comfortable presenting / speaking on stage</li>
+              <li>Bringing that confidence into my college life too</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <h3>Band & Basketball</h3>
+            <p>
+              Frontline experience in team environments — from the music band to the basketball court.
+            </p>
+            <ul>
+              <li>Played electric guitar in school band; performed live</li>
+              <li>Led and played for school basketball team</li>
+              <li>Learned coordination, trust, and dealing with wins + losses</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">
+          If you think I could be a good fit for your tech club or project, reach out on any platform below.
+        </p>
+
+        <div class="social-links">
+
+          <a href="https://www.instagram.com/pranav_avinash_hoga_koi?igsh=dG11dGRxbWU3ZXpn&utm_source=qr"
+            target="_blank" class="social-item" aria-label="Visit my Instagram profile">
+            <div class="social-icon">
+              <!-- Instagram SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <span class="social-label">Instagram</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/pranav-avinash-09a84b381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank" class="social-item" aria-label="Visit my LinkedIn profile">
+            <div class="social-icon">
+              <!-- LinkedIn SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <span class="social-label">LinkedIn</span>
+          </a>
+
+          <a href="https://github.com/Pranav-Avinash" target="_blank" class="social-item"
+            aria-label="Visit my GitHub profile">
+            <div class="social-icon">
+              <!-- GitHub SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </div>
+            <span class="social-label">GitHub</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Pranav Avinash.</span>
+      <span>Built with HTML, CSS & JS • Powered by late night grinds 🎧</span>
+    </div>
+  </footer>
+
+  <!-- FULL PAGE OVERLAY -->
+  <div id="visualizeOverlay" class="visualize-overlay" aria-hidden="true">
+    <div class="overlay-header">
+      <button class="close-overlay-btn" onclick="closeVisualize()">Close [x]</button>
+    </div>
+    <div class="overlay-content">
+      <h2 style="color: #fbbf24; margin-bottom: 2rem; text-align: center;">MY JOURNEY</h2>
+      <div class="collage-hero">
+        <img src="photos/hero1.jpg" alt="Hero Photo 1" class="hero-img" />
+        <img src="photos/hero2.jpg" alt="Hero Photo 2" class="hero-img" />
+      </div>
+      <div class="collage-grid">
+        <img src="photos/photo1.jpg" alt="Portfolio Photo 1" class="collage-img" />
+        <img src="photos/photo2.jpg" alt="Portfolio Photo 2" class="collage-img" />
+        <img src="photos/photo3.jpg" alt="Portfolio Photo 3" class="collage-img" />
+        <img src="photos/photo4.jpg" alt="Portfolio Photo 4" class="collage-img" />
+        <img src="photos/photo5.jpg" alt="Portfolio Photo 5" class="collage-img" />
+        <img src="photos/photo6.jpg" alt="Portfolio Photo 6" class="collage-img" />
+        <img src="photos/photo7.png" alt="Portfolio Photo 7" class="collage-img" />
+      </div>
+      <p
+        style="margin-top: 1.5rem; color: #aaa; font-style: italic; text-align: center; max-width: 600px; margin-left: auto; margin-right: auto;">
+        I dont have acces to a lot of my photos right now , but will retrieve them in due time
+      </p>
+      <p style="margin-top: 2rem; font-size: 0.8rem; color: #555;">(Click [x] to close)</p>
+    </div>
+  </div>
+
+  <!-- EXTERNAL SCRIPT -->
+  <script src="script.js"></script>
 </body>
+
 </html>
